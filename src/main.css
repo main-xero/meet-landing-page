@@ -6,6 +6,7 @@
 
 body {
   font: 100% "Red Hat Display", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 3rem;
+  padding-bottom: 4rem;
 }
 .container .logo {
   margin-bottom: 6rem;
@@ -23,7 +25,7 @@ body {
   text-align: center;
 }
 .container .hero .hero-description {
-  max-width: 26em;
+  min-width: 500px;
   margin: 0 8rem;
 }
 .container .hero .hero-description h1 {
@@ -66,6 +68,159 @@ body {
 }
 .container .hero .hero-description button.purple:hover {
   background-color: #B18BDD;
+}
+
+.meetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3.5rem 5rem;
+  text-align: center;
+}
+.meetings .vertical-line {
+  border-left: 2px solid #d1d1fd;
+  height: 5rem;
+}
+.meetings .circle-one {
+  position: relative;
+  border: 2px solid #d1d1fd;
+  padding: 1.5rem;
+  border-radius: 100%;
+  color: #d1d1fd;
+}
+.meetings .circle-one .number {
+  position: absolute;
+  padding: 2rem;
+  border-raidus: 100%;
+  left: -1rem;
+  top: -1.125rem;
+}
+.meetings .row-images {
+  display: flex;
+  padding: 4rem 0;
+}
+.meetings .row-images img {
+  width: 256px;
+  height: 256px;
+  border-radius: 0.5rem;
+  margin: 0 2rem;
+}
+.meetings .meetings-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 34rem;
+}
+.meetings .meetings-description .meetings-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 27.8125rem;
+}
+.meetings .meetings-description .meetings-title h3 {
+  color: #4d96a9;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  padding-bottom: 1rem;
+}
+.meetings .meetings-description .meetings-title h2 {
+  color: #28283d;
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+  line-height: 1.125;
+}
+.meetings .meetings-description p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #87879d;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .vertical-line {
+  border-left: 2px solid #d1d1fd;
+  height: 5rem;
+}
+footer .circle-two {
+  position: relative;
+  border: 2px solid #d1d1fd;
+  padding: 1.5rem;
+  border-radius: 100%;
+  color: #d1d1fd;
+  background-color: white;
+  margin-bottom: -1.5rem;
+  z-index: 99;
+}
+footer .circle-two .number {
+  position: absolute;
+  padding: 2rem;
+  border-raidus: 100%;
+  left: -1.125rem;
+  top: -1.125rem;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer-container .footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  background-color: #4d96a9;
+  padding: 7rem 5rem;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.footer-container .footer-content h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fafafa;
+  font-weight: extra-bold;
+  line-height: 2.5rem;
+}
+.footer-container .footer-content p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #fafafa;
+  letter-spacing: 0.03em;
+}
+.footer-container .footer-content button.purple {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  color: #fafafa;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  background-color: #855fb1;
+}
+.footer-container .footer-content button.purple:hover {
+  background-color: #B18BDD;
+}
+.footer-container .footer-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/desktop/image-footer.jpg");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */

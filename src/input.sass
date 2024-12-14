@@ -1,4 +1,3 @@
-
 $font-stack: "Red Hat Display", sans-serif
 
 $cyan-600: #4d96a9
@@ -10,7 +9,6 @@ $slate-600: #87879d
 $slate-300: #d1d1fd
 $white: #fafafa
 
-
 *
     margin: 0
     padding: 0
@@ -18,12 +16,17 @@ $white: #fafafa
 
 body
     font: 100% $font-stack
+    overflow-x: hidden
+
+// 
+// Header Section
 
 .container
     display: flex
     flex-direction: column
     align-items: center
     margin-top: 3rem
+    padding-bottom: 4rem
     
     .logo
         margin-bottom: 6rem
@@ -34,7 +37,7 @@ body
         text-align: center
 
         .hero-description
-            max-width: 26em
+            min-width: 500px
             margin: 0 8rem
 
             h1
@@ -77,3 +80,159 @@ body
 
             button.purple:hover
                 background-color: #B18BDD
+
+// 
+// Main Section
+
+.meetings
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 3.5rem 5rem
+    text-align: center
+
+    .vertical-line
+        border-left: 2px solid $slate-300
+        height: 5rem
+
+    .circle-one
+        position: relative
+        border: 2px solid $slate-300
+        padding: 1.5rem
+        border-radius: 100%
+        color: $slate-300
+
+        .number
+            position: absolute
+            padding: 2rem
+            border-raidus: 100%
+            left: -1rem
+            top: -1.125rem
+
+    .row-images
+        display: flex
+        padding: 4rem 0
+
+        img
+            width: 256px
+            height: 256px
+            border-radius: 0.5rem
+            margin: 0 2rem
+
+    .meetings-description
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 34rem
+
+        .meetings-title
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            width: 27.8125rem
+
+            h3
+                color: $cyan-600
+                font-size: 1rem
+                font-weight: 900
+                letter-spacing: 0.15em
+                padding-bottom: 1rem
+
+            h2
+                color: $slate-900
+                font-size: 2.5rem
+                font-weight: 900
+                padding-bottom: 1.5rem
+                line-height: 1.125
+
+        p
+            font-size: 1.125rem
+            line-height: 1.5
+            color: $slate-600
+
+// 
+// Footer Section
+
+footer
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .vertical-line
+        border-left: 2px solid $slate-300
+        height: 5rem
+
+    .circle-two
+        position: relative
+        border: 2px solid $slate-300
+        padding: 1.5rem
+        border-radius: 100%
+        color: $slate-300
+        background-color: white
+        margin-bottom: -1.5rem
+        z-index: 99
+
+        .number
+            position: absolute
+            padding: 2rem
+            border-raidus: 100%
+            left: -1.125rem
+            top: -1.125rem
+
+.footer-container
+    position: relative
+    display: flex
+    justify-content: center
+    width: 100%
+
+    .footer-content
+        display: flex
+        justify-content: center
+        gap: 5rem
+        background-color: $cyan-600
+        padding: 7rem 5rem
+        opacity: 0.9
+        width: 100%
+        height: 100%
+        z-index: 9
+
+        h2
+            font-size: 2.5rem
+            font-weight: 900
+            color: $white
+            font-weight: extra-bold
+            line-height: 2.5rem
+
+        p
+            font-size: 1.125rem
+            line-height: 1.5
+            color: $white
+            letter-spacing: 0.03em
+
+        button.purple
+            padding: 1rem 2rem
+            border: none
+            border-radius: 9999px
+            color: $white
+            font-weight: 600
+            letter-spacing: 0.03em
+            margin: 0.5rem
+            cursor: pointer
+            background-color: transparent
+            transition: background-color 0.5s ease
+            background-color: $purple-600
+
+        button.purple:hover
+            background-color: #B18BDD
+
+    .footer-banner
+        position: absolute
+        width: 100%
+        height: 100%
+        background-image: url("./assets/desktop/image-footer.jpg")
+        background-size: cover
+        top: 0
+        left: 0
+        z-index: -1
