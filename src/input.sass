@@ -1,0 +1,79 @@
+
+$font-stack: "Red Hat Display", sans-serif
+
+$cyan-600: #4d96a9
+$cyan-300: #8fe3f9
+$purple-600: #855fb1
+$purple-300: #d9b8ff
+$slate-900: #28283d
+$slate-600: #87879d
+$slate-300: #d1d1fd
+$white: #fafafa
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font: 100% $font-stack
+
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 3rem
+    
+    .logo
+        margin-bottom: 6rem
+
+    .hero
+        display: flex
+        align-items: center
+        text-align: center
+
+        .hero-description
+            max-width: 26em
+            margin: 0 8rem
+
+            h1
+                font-size: 4rem
+                font-weight: 900
+                line-height: 1
+                margin-bottom: 2.5rem
+                color: $slate-900
+            
+            p
+                color: $slate-600
+                margin-bottom: 2.5rem
+                font-size: 1.125rem
+                font-weight: 500
+                line-height: 1.5
+            
+            button
+                padding: 1rem 2rem
+                border: none
+                border-radius: 9999px
+                color: $white
+                font-weight: 600
+                letter-spacing: 0.03em
+                margin: 0.5rem
+                cursor: pointer
+                background-color: transparent
+                transition: background-color 0.5s ease
+
+            button.green
+                background-color: $cyan-600
+
+            button.green > span
+                color: $cyan-300
+
+            button.green:hover
+                background-color: #71C0D4
+
+            button.purple
+                background-color: $purple-600
+
+            button.purple:hover
+                background-color: #B18BDD
