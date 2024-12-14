@@ -111,13 +111,14 @@ body
 
     .row-images
         display: flex
+        justify-content: center
         padding: 4rem 0
 
         img
-            width: 256px
-            height: 256px
+            width: 16rem
+            height: 16rem
             border-radius: 0.5rem
-            margin: 0 2rem
+            margin: 0 1rem
 
     .meetings-description
         display: flex
@@ -184,15 +185,13 @@ footer
 .footer-container
     position: relative
     display: flex
-    justify-content: center
-    width: 100%
 
     .footer-content
         display: flex
-        justify-content: center
-        gap: 5rem
+        flex-direction: row
+        column-gap: 9rem
         background-color: $cyan-600
-        padding: 7rem 5rem
+        padding: 7rem 9rem
         opacity: 0.9
         width: 100%
         height: 100%
@@ -212,13 +211,16 @@ footer
             letter-spacing: 0.03em
 
         button.purple
-            padding: 1rem 2rem
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 0.5rem
             border: none
             border-radius: 9999px
             color: $white
             font-weight: 600
             letter-spacing: 0.03em
-            margin: 0.5rem
+            padding: 0 3rem
             cursor: pointer
             background-color: transparent
             transition: background-color 0.5s ease
@@ -233,6 +235,53 @@ footer
         height: 100%
         background-image: url("./assets/desktop/image-footer.jpg")
         background-size: cover
+        background-position: center
+        background-repeat: no-repeat
         top: 0
         left: 0
         z-index: -1
+
+@media only screen and (max-width: 768px)
+    .hero
+        position: relative
+        display: flex
+        flex-direction: column
+
+        .hero-left
+            margin-bottom: 2rem
+
+        .hero-right
+            display: none
+
+    .meetings > .row-images > img
+        width: 9.5rem      
+        height: 10rem
+
+    .footer-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: 4rem
+
+        h2
+            margin-bottom: -2rem
+            margin-top: -2rem
+
+        p
+            margin-bottom: -3rem
+
+@media only screen and (max-width: 480px)
+    .hero > .hero-description > .button
+        display: flex
+        flex-direction: column
+
+    main > .meetings-description > p
+        width: 400px
+
+    footer > .footer-container > .footer-content
+        display: flex
+        flex-direction: column
+
+        button
+            margin-top: 1rem
+            height: 50px

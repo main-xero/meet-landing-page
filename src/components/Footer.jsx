@@ -7,14 +7,10 @@ export default function Footer() {
       </div>
       <div className="footer-container">
         <div className="footer-content">
-          <h2>
-            Experience more
-            <br /> together
-          </h2>
+          <h2>Experience more together</h2>
           <p>
-            Stay connected with reliable HD meetings
-            <br /> and unlimited one-on-one and group video
-            <br /> sessions.
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
           </p>
           <button class="purple">
             Download <span>v1.3</span>

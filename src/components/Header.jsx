@@ -11,14 +11,22 @@ export default function Header() {
         <img src={heroLeft} class="hero-left" alt="left-hero" />
 
         <div class="hero-description">
-          <h1>Group Chat<br/> for Everyone</h1>
+          <h1>
+            Group Chat
+            <br /> for Everyone
+          </h1>
           <p>
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
-          <button class="green">Download <span>v1.3</span></button>
-          <button class="purple">What is it?</button>
+          <div class="button">
+            <button class="green">
+              Download <span>v1.3</span>
+            </button>
+            <button class="purple">What is it?</button>
+          </div>
         </div>
+
         <img src={heroRight} class="hero-right" alt="hero-right" />
       </section>
     </div>
